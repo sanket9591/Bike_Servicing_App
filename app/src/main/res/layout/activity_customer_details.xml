@@ -35,6 +35,19 @@
             android:hint="Contact"
             android:textColor="@color/black" />
 
+        <EditText
+            android:id="@+id/editTextaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:hint="Address"
+            android:textColor="@color/black" />
+
+
         <AutoCompleteTextView
             android:id="@+id/editTextBikeManufacturer"
             android:layout_width="match_parent"
@@ -66,7 +79,7 @@
             android:layout_marginTop="20sp"
             android:ems="10"
             android:gravity="center"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:minHeight="48dp"
             android:hint="Bike Build Year"
             android:textColor="@color/black" />
@@ -78,7 +91,7 @@
             android:layout_marginTop="20sp"
             android:ems="10"
             android:gravity="center"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:minHeight="48dp"
             android:hint="Bike No."
             android:textColor="@color/black" />
@@ -90,21 +103,9 @@
             android:layout_marginTop="20sp"
             android:ems="10"
             android:gravity="center"
-            android:inputType="textPersonName"
+            android:inputType="numberDecimal"
             android:minHeight="48dp"
             android:hint="Daily Running"
-            android:textColor="@color/black" />
-
-        <EditText
-            android:id="@+id/editTextaddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:hint="Address"
             android:textColor="@color/black" />
 
         <Button
