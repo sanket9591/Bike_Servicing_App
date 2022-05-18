@@ -56,23 +56,13 @@ private MySQLiteOpenHelper mySQLiteOpenHelper;
 
                 if(name.isEmpty() && contact.isEmpty() && bm.isEmpty() && bmodel.isEmpty() && byear.isEmpty() && bno.isEmpty() && dailyrunning.isEmpty() && address.isEmpty())
                 {
-                    Toast.makeText(customerDetails.this,"Please enter all the tab",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(customerDetails.this,"Please enter all the Filed",Toast.LENGTH_SHORT).show();
                     return;
                 }
                 mySQLiteOpenHelper.insertRecord(name,contact,bm,bmodel,byear,bno,dailyrunning,address);
                 Toast.makeText(customerDetails.this, "Record Inserted", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(customerDetails.this,ServiceDetails.class);
                 startActivity(i);
-               // name.setText("");
-               // contact.setText("");
-               // bm.setText("");
-                //bmodel.setText("");
-              //  byear.setText("");
-               // bno.setText("");
-              //  dailyrunning.setText("");
-               // address.setText("");
-
-
             }
         });
     }

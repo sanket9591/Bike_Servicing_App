@@ -30,7 +30,7 @@
             android:layout_marginTop="20sp"
             android:ems="10"
             android:gravity="center"
-            android:inputType="textPersonName"
+            android:inputType="phone"
             android:minHeight="48dp"
             android:hint="Contact"
             android:textColor="@color/black" />
