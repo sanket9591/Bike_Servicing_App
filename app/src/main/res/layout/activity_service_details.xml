@@ -8,29 +8,156 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:id="@+id/datepicker"
-            android:src="@drawable/calender"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop = "46dp"
-            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:orientation="horizontal">
 
-        <EditText
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:hint="Select Date"
-            android:focusable = "true"
-            android:gravity="center"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/date"
-            android:textColorHint = "#800D05"
-            android:layout_marginTop = "46dp"/>
+            <ImageView
+                android:id="@+id/datepicker"
+                android:layout_width="47dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="46dp"
+                android:src="@drawable/calender" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="46dp"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:hint="Select Date"
+                android:minHeight="48dp"
+                android:textColorHint="#800D05" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="175dp"
+                    android:layout_height="69dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="Services"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="327dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15sp"
+                    android:text="Oil  Change" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15sp"
+                    android:text="Chain lubrication" />
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15sp"
+                    android:text="Tire checking" />
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15sp"
+                    android:text="Brake checking" />
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15sp"
+                    android:text="Air filter checking" />
+
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15sp"
+                    android:text="Fuel filter checking" />
+
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15sp"
+                    android:text="Battery checking" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBox8"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15sp"
+                    android:text="Spark plug checking" />
+
+                <CheckBox
+                    android:id="@+id/checkBox9"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15sp"
+                    android:text="Carburetor checking" />
+
+                <CheckBox
+                    android:id="@+id/checkBox10"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15sp"
+                    android:text="Wheel and Steering Bearing checking" />
+                <CheckBox
+                    android:id="@+id/checkBox11"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15sp"
+                    android:text="Washing" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100sp"
+                    android:layout_marginLeft="100sp"
+                    android:layout_marginTop="20sp"
+                    android:text="Submit" />
+            </LinearLayout>
+        </ScrollView>
+
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

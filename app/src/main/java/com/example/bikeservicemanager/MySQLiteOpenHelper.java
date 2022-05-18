@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
@@ -28,7 +29,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         // setting our column names
         // along with their data types.
-        String query = "CREATE TABLE " + TABLE_NAME +
+        String query = "CREATE TABLE if not Exists " + TABLE_NAME +
                 " (" + Col1_NAME + " TEXT,"
                 + Col2_NAME + " TEXT,"
                 + Col3_NAME + " TEXT,"

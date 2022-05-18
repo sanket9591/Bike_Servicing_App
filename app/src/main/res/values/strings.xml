@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Bike ServiceManager</string>
+
+    <string-array name="str_demo">
+        <item>se</item>
+        <item>se</item>
+        <item>se</item>
+    </string-array>
 </resources>
