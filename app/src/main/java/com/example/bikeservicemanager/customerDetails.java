@@ -2,6 +2,7 @@ package com.example.bikeservicemanager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -49,6 +50,8 @@ private MySQLiteOpenHelper mySQLiteOpenHelper;
                 }
                 mySQLiteOpenHelper.insertRecord(name,contact,bm,bmodel,byear,bno,dailyrunning,address);
                 Toast.makeText(customerDetails.this, "Record Inserted", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(customerDetails.this,ServiceDetails.class);
+                startActivity(i);
                // name.setText("");
                // contact.setText("");
                // bm.setText("");
