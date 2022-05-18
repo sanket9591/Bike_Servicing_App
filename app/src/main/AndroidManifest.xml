@@ -14,9 +14,6 @@
             android:name=".upcoming"
             android:exported="false" />
         <activity
-            android:name=".Settings"
-            android:exported="false" />
-        <activity
             android:name=".customerDetails"
             android:exported="false" />
         <activity

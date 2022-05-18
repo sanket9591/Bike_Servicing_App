@@ -37,14 +37,6 @@
             android:layout_marginTop="20sp"
             android:text="Add Customer"
             android:textSize="20sp" />
-        <Button
-            android:id="@+id/set"
-            android:layout_width="251dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20sp"
-            android:text="Settings"
-            android:textSize="20sp" />
 
     </LinearLayout>
 

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         add=findViewById(R.id.add);
-        set=findViewById(R.id.set);
+
         up=findViewById(R.id.up);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,13 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        set.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(MainActivity.this,Settings.class);
-                startActivity(intent);
-            }
-        });
+
         up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 
 import java.util.Objects;
 
@@ -14,12 +16,21 @@ public class customerDetails extends AppCompatActivity {
 private EditText txt_name,txt_contact,txt_Bike_Manufacturer,txt_Bike_model,txt_Build_Year,txt_Bike_No,txt_Daily_Running,txt_address;
 private Button add;
 private MySQLiteOpenHelper mySQLiteOpenHelper;
+    String[] languages = { "Hero","Honda","Yamaha","Kawasaki","TVS","Bajaj","Royal Enfield","Suzuki"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_customer_details);
         Objects.requireNonNull(getSupportActionBar()).setTitle("Customer Details");
 
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.select_dialog_singlechoice, languages);
+        //Find TextView control
+        AutoCompleteTextView acTextView = (AutoCompleteTextView) findViewById(R.id.editTextBikeManufacturer);
+        //Set the number of characters the user must type before the drop down list is shown
+        acTextView.setThreshold(1);
+        //Set the adapter
+        acTextView.setAdapter(adapter);
         txt_name = findViewById(R.id.editTextPersonName);
         txt_contact = findViewById(R.id.editTextContact);
         txt_Bike_Manufacturer = findViewById(R.id.editTextBikeManufacturer);
