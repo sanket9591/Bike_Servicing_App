@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/editTextPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
@@ -24,7 +24,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/editTextContact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
@@ -36,7 +36,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/editTextBikeManufacturer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
@@ -48,7 +48,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/editTextBikemodel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
@@ -60,7 +60,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/editTextbuildyear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
@@ -72,7 +72,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/editTextbikeno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
@@ -84,7 +84,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName7"
+            android:id="@+id/editTextdailyrunning"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
@@ -96,7 +96,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName8"
+            android:id="@+id/editTextaddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
@@ -108,7 +108,7 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnadd"
             android:layout_width="234dp"
             android:layout_height="62dp"
             android:layout_gravity="center"
