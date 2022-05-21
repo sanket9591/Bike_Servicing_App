@@ -11,6 +11,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/serviceAddIntent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Service" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="108dp"
@@ -58,93 +64,13 @@
                     android:textColor="@color/black"
                     android:textSize="22sp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1"
-                    android:layout_width="327dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15sp"
-                    android:text="Oil  Change" />
 
-                <CheckBox
-                    android:id="@+id/checkBox2"
-                    android:layout_width="331dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15sp"
-                    android:text="Chain lubrication" />
-
-                <CheckBox
-                    android:id="@+id/checkBox3"
-                    android:layout_width="333dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15sp"
-                    android:text="Tire checking" />
-
-                <CheckBox
-                    android:id="@+id/checkBox4"
-                    android:layout_width="339dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15sp"
-                    android:text="Brake checking" />
-
-                <CheckBox
-                    android:id="@+id/checkBox5"
-                    android:layout_width="345dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15sp"
-                    android:text="Air filter checking" />
-
-                <CheckBox
-                    android:id="@+id/checkBox6"
-                    android:layout_width="345dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15sp"
-                    android:text="Fuel filter checking" />
-
-                <CheckBox
-                    android:id="@+id/checkBox7"
-                    android:layout_width="345dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15sp"
-                    android:text="Battery checking" />
-
-
-                <CheckBox
-                    android:id="@+id/checkBox8"
-                    android:layout_width="345dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15sp"
-                    android:text="Spark plug checking" />
-
-                <CheckBox
-                    android:id="@+id/checkBox9"
-                    android:layout_width="345dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15sp"
-                    android:text="Carburetor checking" />
-
-                <CheckBox
-                    android:id="@+id/checkBox10"
-                    android:layout_width="345dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15sp"
-                    android:text="Wheel and Steering Bearing checking" />
-                <CheckBox
-                    android:id="@+id/checkBox11"
-                    android:layout_width="345dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15sp"
-                    android:text="Washing" />
+                <LinearLayout
+                    android:id="@+id/myLay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"></LinearLayout>
 
                 <Button
                     android:id="@+id/btnsubmit"
@@ -164,6 +90,7 @@
                     android:text="ADD CUSTOMER" />
             </LinearLayout>
         </ScrollView>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

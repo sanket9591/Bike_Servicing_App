@@ -6,13 +6,22 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class customerDetails extends AppCompatActivity {
@@ -57,6 +66,26 @@ public class customerDetails extends AppCompatActivity {
                 String dailyrunning = txt_Daily_Running.getText().toString();
                 String address = txt_address.getText().toString();
 
+
+             /*   Map<String,Object> Service_Details= new HashMap<>();
+                Service_Details.put("cid","1");
+                Service_Details.put("sid","1");
+                Service_Details.put("Date","01-11-2001");
+                Service_Details.put("nextDate","01-11-2002");
+
+
+                Map<String,Object> All_Services= new HashMap<>();
+                Service_Details.put("sid","1");
+                Service_Details.put("services","oil change");
+                Service_Details.put("sid","2");
+                Service_Details.put("services","Chain lubrication");
+                Service_Details.put("sid","3");
+                Service_Details.put("services","Tire checking");
+                Service_Details.put("sid","3");
+                Service_Details.put("services","Brake checking");
+
+*/
+
                 if (name.isEmpty() && contact.isEmpty() && bm.isEmpty() && bmodel.isEmpty() && byear.isEmpty() && bno.isEmpty() && dailyrunning.isEmpty() && address.isEmpty()) {
                     Toast.makeText(customerDetails.this, "Please enter all the Filed", Toast.LENGTH_SHORT).show();
                 }
@@ -72,8 +101,32 @@ public class customerDetails extends AppCompatActivity {
                         .addOnFailureListener(e -> Toast.makeText(customerDetails.this, "User Add Failed !!", Toast.LENGTH_SHORT).show())
                         .addOnSuccessListener(unused -> Toast.makeText(customerDetails.this, "User Added", Toast.LENGTH_SHORT).show());
 
+
+
+
+             //   FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+               /*db.collection("Service_Details")
+                        .add(Service_Details)
+                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                            @Override
+                            public void onSuccess(DocumentReference documentReference) {
+                                Toast.makeText(customerDetails.this, "Data saved", Toast.LENGTH_SHORT).show();
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(customerDetails.this, "Data failed", Toast.LENGTH_SHORT).show();
+                    }
+                });*/
+
+
+               // db.collection("AllServices");
+                      //  .addOnFailureListener(e -> Toast.makeText(customerDetails.this, "User Add Failed !!", Toast.LENGTH_SHORT).show())
+                      //  .addOnSuccessListener(unused -> Toast.makeText(customerDetails.this, "User Added", Toast.LENGTH_SHORT).show());
+
                 //mySQLiteOpenHelper.insertRecord(name,contact,bm,bmodel,byear,bno,dailyrunning,address);
-                Toast.makeText(customerDetails.this, "Record Inserted", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(customerDetails.this, "Record Inserted", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(customerDetails.this, ServiceDetails.class);
                 startActivity(i);
             }
