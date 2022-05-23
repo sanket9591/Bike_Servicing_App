@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/BTech/third year/sem II/Lab/ISE/app/src/main/res/layout/activity_add_services.xml" value="0.2359375" />
-        <entry key="..\:/BTech/third year/sem II/Lab/ISE/app/src/main/res/layout/activity_customer_details.xml" value="0.11041666666666666" />
+        <entry key="..\:/BTech/third year/sem II/Lab/ISE/app/src/main/res/layout/activity_customer_details.xml" value="0.264" />
         <entry key="..\:/BTech/third year/sem II/Lab/ISE/app/src/main/res/layout/activity_service_details.xml" value="0.20462962962962963" />
         <entry key="..\:/BTech/third year/sem II/Lab/ISE/app/src/main/res/layout/activity_upcoming.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/BikeServiceManager/app/src/main/res/layout/activity_customer_details.xml" value="0.25416666666666665" />
@@ -16,5 +16,5 @@
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16_PREVIEW" project-jdk-name="16" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="16" project-jdk-type="JavaSDK" />
 </project>
